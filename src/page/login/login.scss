@@ -1,0 +1,46 @@
+@import '../../style/mixin.scss';
+
+.login-form{
+    width: 100%;
+    margin: .5rem 0;
+    background-color: #fff;
+    .input-container{
+       padding: .5rem;
+       @include flex(space-between);
+       border-bottom: 1px solid #f1f1f1;
+       input{
+           @include font(.7rem)
+       }
+    }
+}
+.button-swich{
+    @include flex(center);
+    width: 2rem;
+    height: .7rem;
+    border: 1px;
+    background-color: #ccc;
+    
+    border-radius: 10px;
+    position: relative;
+    line-height: .7rem;
+    
+    .cirle-swich{
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+        background-color: #f1f1f1;
+        position: absolute;
+        right: -0.5rem;
+        z-index: 1;
+        transition: all 1s;
+    }
+    .trans_right{
+        transform: translateX(-0.9rem)
+    }
+    span{
+        @include font(0.5rem,#fff)
+    }
+}
+.trans_swich{
+    background-color: #4cd964;
+}

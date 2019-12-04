@@ -1,0 +1,19 @@
+$blue: #3190e8;
+$bc: #e4e4e4;
+$fc:#fff;
+$common-left: 0.2rem;
+$common-right: 0.6rem;
+
+// 字体颜色,大小, 水平布局
+@mixin font($size, $color: #333, $text-align: left){
+    font-size: $size;
+    color: $color;
+    text-align: $text-align;
+  }
+
+// flex布局
+@mixin flex($justify-content: center, $align-items: center) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+  }
