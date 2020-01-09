@@ -43,3 +43,38 @@ export default class Server {
         })
     }
 }
+
+function add(arr){
+    var sum = 0;
+    arr.forEach(el => {
+        sum += el
+    });
+    return sum
+}
+function add(arr){
+    var sum = 0;
+    for (var i = 0; i < arr.length; i++) {
+        if((typeof(arr[i]) === 'number')&&!isNaN(arr[i])){
+            sum +=arr[i]
+        }
+    }
+    return sum
+}
+
+
+
+
+function mapArr(arr,d){
+    
+    return arr.map(el => el*d)
+}
+
+function max(arr){
+    var max = arr[0]
+    for (var i = 0; i < arr.length; i++) {
+        if(arr[i]>max){
+            max = arr[i]
+        }
+    }
+    return max
+}

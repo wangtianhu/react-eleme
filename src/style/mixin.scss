@@ -17,3 +17,9 @@ $common-right: 0.6rem;
     justify-content: $justify-content;
     align-items: $align-items;
   }
+
+  // 元素长宽
+@mixin wh($width, $height) {
+  width: $width;
+  height: $height;
+}

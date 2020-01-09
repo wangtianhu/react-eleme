@@ -44,3 +44,7 @@
 .trans_swich{
     background-color: #4cd964;
 }
+.login-tips{
+    @include font(0.5rem,red,left);
+    padding:10px
+}
